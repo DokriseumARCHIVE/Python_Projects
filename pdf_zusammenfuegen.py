@@ -5,7 +5,7 @@ from PyPDF4 import PdfFileReader, PdfFileWriter, PdfFileMerger, PageRange
 def merge_pdfs(result_name):
     pdf_writer = PdfFileWriter()
     root = tkinter.Tk()
-    files = filedialog.askopenfilenames(parent=root,title='PDF auswählen')
+    files = filedialog.askopenfilenames(parent=root, title='PDF auswählen')
 
     for file in root.tk.splitlist(files):
         pdf_reader = PdfFileReader(file)
