@@ -1,6 +1,6 @@
 import tkinter
 from tkinter import filedialog
-from PyPDF2 import PdfFileReader, PdfFileWriter
+from PyPDF4 import PdfFileReader, PdfFileWriter, PdfFileMerger, PageRange
 
 def merge_pdfs(result_name):
     pdf_writer = PdfFileWriter()
